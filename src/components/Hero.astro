@@ -1,0 +1,55 @@
+---
+
+---
+
+<section class="container wrapper flex-center">
+  <div class="content">
+    <h1>Take your business to the next level</h1>
+    <p>
+      We do the research, pick the right techonology, design and build solutions
+      that deliver measurable results.
+    </p>
+    <button class="btn">Book a consultation</button>
+  </div>
+  <div class="content">
+    <img src="/src/assets/hero.svg" alt="Hero" />
+  </div>
+</section>
+
+<style lang="scss">
+  h1 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .btn {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #18181b;
+    transition:
+      background-color 0.3s ease,
+      transform 0.2s ease;
+
+    &:hover {
+      background-color: #18181b;
+      color: #fff;
+    }
+  }
+</style>
