@@ -1,0 +1,144 @@
+---
+const title = "CONTACT US";
+const subtitle = "Bring your vision to life with modern, high-quality software solutions";
+---
+
+<section class="container">
+    <div>
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
+    </div>
+    <div class="wrapper">
+        <form id="ContactForm">
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="budget">Choose a budget:</label><br>
+            <select name="budget" id="budget">
+                <option value="Up to €2500">Up to €2500</option>
+                <option value="€2500 - €5000">€2500 - €5000</option>
+                <option value="€5000 - €10000">€5000 - €10000</option>
+                <option value="Over €10000">Over €10000</option>
+            </select>
+            <label for="Message">Message:</label><br>
+            <textarea id="Message" name="message"></textarea><br>  
+            <button class="btn" type="submit">Send</button>
+            <div id="responseMessage" style="margin-top: 10px;"></div> 
+        </form>
+        <div class="content">
+            <img src="/src/assets/contactus.svg" alt="Contactus" />
+        </div>
+    </div>
+</section>
+<script type="module" src="/src/scripts/contactForm.ts"></script>
+<style lang="scss">
+    
+    h2 {
+        border-left: #a6c1d9 solid 5px;
+        margin-bottom: 0px;
+        padding: 0px 2px;
+        margin-top: 20px;
+    }
+
+    .container {
+        padding: 100px 0px;
+
+    }
+
+    p {
+        font-size:large;
+        border-left: #a6c1d9 solid 5px;
+        margin-top: 0px;
+        padding: 0px 2px;
+    }
+
+    label { 
+        font-size: 10px;
+    }
+
+    form {
+        padding: 30px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        border: 2px solid #dcdcdc;
+        width: 500px;
+        background: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        //gap: 5px;
+    } 
+
+    .content {
+        width: 100%;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea,
+    #budget {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 10px 16px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 2px inset #a6c1d9 ;
+        outline:none;
+        transition: border-color 0.2s ease 0s,
+        box-shadow 0.2s ease 0s,
+        border-width 0.2s ease 0s,
+        border-style 0.2s ease 0s;
+    }
+
+    textarea {
+        resize: none;
+        height: 130px;
+    }
+
+    textarea:focus,
+    input:focus,
+    #budget:focus {
+        border-color: #4a90e2 ;
+        border-style: solid;
+        border-width: 2.5px;
+        box-shadow: 0 0 3px rgba(74, 144, 226, 0.5);
+    }
+
+    .btn {
+    font-size: 18px;
+    border:2px outset #a6c1d9;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    transition:
+        background-color 0.3s ease,
+        color 0.2s ease;
+
+    &:hover {
+        background-color: #18181b;
+        color: #fff;
+    }
+
+    } 
+
+    #responseMessage {
+        margin: top 20px;
+        font-size: 17px;
+    }
+
+</style>
