@@ -3,7 +3,7 @@ const title = "CONTACT US";
 const subtitle = "Bring your vision to life with modern, high-quality software solutions";
 ---
 
-<section class="container" id="form">
+<section class="container" id="contact-form">
     <div>
         <h2>{title}</h2>
         <p>{subtitle}</p>
@@ -39,11 +39,6 @@ const subtitle = "Bring your vision to life with modern, high-quality software s
         margin-bottom: 0px;
         padding: 0px 2px;
         margin-top: 20px;
-    }
-
-    .container {
-        padding: 100px 1rem;
-
     }
 
     p {
@@ -138,6 +133,20 @@ const subtitle = "Bring your vision to life with modern, high-quality software s
     #responseMessage {
         margin: top 20px;
         font-size: 17px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .wrapper {
+            flex-direction: column;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .container {
+             padding:  100px 10px;
+        }
     }
 
 </style>
