@@ -25,10 +25,6 @@ const cta = "Book a consultation";
     font-size: 18px;
   }
 
-  .container {
-    padding: 0px;
-  }
-
   .wrapper {
     display: flex;
     align-items: center;
@@ -42,7 +38,7 @@ const cta = "Book a consultation";
 
   .btn {
     all: unset;
-    display: inline-block;
+    display: block;
     cursor: pointer;
     padding: 8px 16px;
     border-radius: 4px;
@@ -57,15 +53,31 @@ const cta = "Book a consultation";
     }
   }
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      padding: 0 30px;
+    }
+
+    p {
+      text-align: center;
+      padding: 0 30px;
+    }
+
     .wrapper {
-      flex-direction: column;
-      padding:  0px 10px;
+      gap: 0;
+      flex-direction: column-reverse;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     .content {
       width: 100%;
     }
+
+    .btn {
+      margin: 0 auto;
+    }
   }
-  
 </style>
