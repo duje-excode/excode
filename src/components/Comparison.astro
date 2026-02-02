@@ -1,0 +1,117 @@
+---
+const header = "Old Way vs New Way"
+const title = "Old Way - Traditional Agency";
+const title2= "New Way - Freelance";
+---
+
+<section class="container"> 
+    <h2>{header}</h2>
+    <div class="wrapper">
+        <div class="content">
+            <img src="/src/assets/meeting.jpg" class="photo" alt="meeting">
+            <h3>{title}</h3>
+            <h4>Big Promises. Slow Progress</h4>
+            <p>Bloated processes and constant upsells.</p>
+            <ul class="list bad">
+                <li>
+                    <img src="/src/assets/cross.svg" class="icon" alt="x">
+                    Large teams you don't need
+                </li>
+                <li>
+                    <img src="/src/assets/cross.svg" class="icon" alt="x">
+                    Endless meetings & handoffs
+                </li>
+                <li>
+                    <img src="/src/assets/cross.svg" class="icon" alt="x">
+                    Slow execution, delayed results
+                </li>
+                <li>
+                    <img src="/src/assets/cross.svg" class="icon" alt="x">
+                    Constant upsells and scope creep
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <img src="/src/assets/freelance.jpg" class="photo" alt="meeting">
+            <h3>{title2}</h3>
+            <h4>Fast. Focused. Results-Driven.</h4>
+            <p>One expert, zero friction</p>
+            <ul class="list good">
+                <li>
+                    <img src="/src/assets/check.svg" class="icon" alt="✓">
+                    Direct collaboration - no middelman
+                </li>
+                <li>
+                    <img src="/src/assets/check.svg" class="icon" alt="✓">
+                    Move fast, ship faster
+                </li>
+                <li>
+                    <img src="/src/assets/check.svg" class="icon" alt="✓">
+                    Clear scope, no upsells
+                </li>
+                <li>
+                    <img src="/src/assets/check.svg" class="icon" alt="✓">
+                    Results delivered quickly
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .content {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .list li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  h4{
+    margin-bottom: 0px;
+  }
+  p{
+    margin-top: 0px;
+  }
+  h3 {
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  @media only screen and (max-width: 768px) {
+        .wrapper {
+        flex-direction: column;
+        }
+
+        .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+    }
+    .photo{
+        display: block;
+        max-width: 300px;
+    }
+  
+</style>
