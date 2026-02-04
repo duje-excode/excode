@@ -1,0 +1,104 @@
+---
+
+---
+
+<section class="container">
+    <h2>Case Studies</h2>
+    <p>Explore real-world results achieved through our custom-built digital platforms</p>
+    <div class="wrapper">
+        <div class="content">
+            <p>For MakeaDrop, we built a fast and secure file-sharing app that enables instant 
+            transfers between devices — no login, no setup.
+            Designed for simplicity and speed, MakeaDrop makes file sharing effortless on the go.</p>
+            <a href="https://makeadrop.com/" target="_blank">
+                Case info<img src="/src/assets/link.svg" class="icon" alt="link">
+            </a>
+        </div>
+        <div class="content">
+            <p>For SubscribX, we developed a clean and scalable subscription platform focused on
+            recurring revenue. With intuitive flows and seamless payments, SubscribX helps businesses 
+            manage and grow subscriptions with ease.</p>
+            <a href="https://subscribx.vercel.app/" target="_blank">
+                Case info<img src="/src/assets/link.svg" class="icon" alt="link">
+            </a>
+        </div>
+        <div class="content">
+            <p>For Venues4Weddings, we created a venue discovery platform powered by AI semantic search.
+            By understanding user intent beyond filters, the platform helps couples find the perfect 
+            wedding venue faster and generates higher-quality inquiries for partners.</p>
+            <a href="https://venues-4-weddings.vercel.app/" target="_blank">
+                Case info<img src="/src/assets/link.svg" class="icon" alt="link"> 
+            </a>           
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    .wrapper {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .content {
+        padding: 40px;
+        border: 2px solid black;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        background-color: #191a23;
+        color: #f3f3f3;
+    }
+
+    .content p {
+        flex-grow: 1;
+    }
+
+    p {
+        display: inline;
+    }
+
+    .content a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: yellow;
+        font-size: 22px;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+    }
+
+    h2 {
+        display: inline ;
+        margin-right: 5px;
+        background-color: #b9ff66;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        p {
+            display: block; 
+        }
+    }
+</style>
