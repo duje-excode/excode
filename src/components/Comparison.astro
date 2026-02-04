@@ -62,9 +62,9 @@ const title2= "New Way - Freelance";
 
     .wrapper {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        gap: 5px;
+        gap: 30px;
     }
 
     .content {
@@ -106,22 +106,29 @@ const title2= "New Way - Freelance";
 
     h2 {
         text-align: center;
+        font-size: 48px;
     }
 
     @media only screen and (max-width: 768px) {
         .wrapper {
             flex-direction: column;
+            align-items: center;
         }
 
         .container {
             padding-left: 10px;
             padding-right: 10px;
         }
+
+        h2{
+            font-size: 38px;
+        }
     }
         
     .photo {
         display: block;
-        max-width: 300px;
+        width: 300px;
+        height: 200px;
     }
   
 </style>
